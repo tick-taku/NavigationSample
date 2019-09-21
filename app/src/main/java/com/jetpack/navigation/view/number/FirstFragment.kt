@@ -15,7 +15,7 @@ class FirstFragment: Fragment(R.layout.fragment_first) {
         super.onActivityCreated(savedInstanceState)
 
         binding.next.setOnClickListener {
-            findNavController().navigate(FirstFragmentDirections.firstToSecond())
+//            findNavController().navigate(FirstFragmentDirections.firstToSecond())
         }
     }
 

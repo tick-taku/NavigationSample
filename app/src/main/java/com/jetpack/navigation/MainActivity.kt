@@ -7,6 +7,7 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.jetpack.navigation.databinding.ActivityMainBinding
 import com.jetpack.navigation.util.dataBinding
 
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
 
         setupToolbar()
+
+        setupBottomNavigation()
     }
 
     //------------------------------------------------------------------------------------------------------------------
@@ -38,6 +41,14 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             }
             window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
         }
+    }
+
+    /**
+     * Setup for BottomNavigationView
+     */
+    private fun setupBottomNavigation() {
+        val navController = findNavController(R.id.nav_host_fragment)
+        binding.bottomNavigation.setupWithNavController(navController)
     }
 
 }

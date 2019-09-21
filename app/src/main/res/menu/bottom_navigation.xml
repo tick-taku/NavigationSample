@@ -13,12 +13,4 @@
           android:icon="@drawable/bottom_menu_selector"
           android:title="@string/navigation_third"/>
 
-    <item android:id="@+id/navigation_fourth"
-          android:icon="@drawable/bottom_menu_selector"
-          android:title="@string/navigation_fourth"/>
-
-    <item android:id="@+id/navigation_fifth"
-          android:icon="@drawable/bottom_menu_selector"
-          android:title="@string/navigation_fifth"/>
-
 </menu>
