@@ -1,4 +1,4 @@
-package com.jetpack.navigation.view
+package com.jetpack.navigation.view.number
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

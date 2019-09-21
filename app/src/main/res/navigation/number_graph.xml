@@ -5,7 +5,7 @@
             app:startDestination="@id/first_fragment">
 
     <fragment android:id="@+id/first_fragment"
-              android:name="com.jetpack.navigation.view.FirstFragment"
+              android:name="com.jetpack.navigation.view.number.FirstFragment"
               android:label="@string/navigation_first">
 
         <action android:id="@+id/first_to_second"
@@ -18,7 +18,7 @@
     </fragment>
 
     <fragment android:id="@+id/second_fragment"
-              android:name="com.jetpack.navigation.view.SecondFragment"
+              android:name="com.jetpack.navigation.view.number.SecondFragment"
               android:label="@string/navigation_second">
 
         <action android:id="@+id/second_to_third"
@@ -31,7 +31,7 @@
     </fragment>
 
     <fragment android:id="@+id/third_fragment"
-              android:name="com.jetpack.navigation.view.ThirdFragment"
+              android:name="com.jetpack.navigation.view.number.ThirdFragment"
               android:label="@string/navigation_third">
 
         <action android:id="@+id/third_to_first"
