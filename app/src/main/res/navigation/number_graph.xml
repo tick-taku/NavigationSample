@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/number_graph"
             app:startDestination="@id/navigation_first">
 
     <fragment android:id="@+id/navigation_first"
               android:name="com.jetpack.navigation.view.number.FirstFragment"
-              android:label="@string/navigation_first">
+              android:label="@string/navigation_first"
+              tools:layout="@layout/fragment_first">
 
 <!--        <action android:id="@+id/first_to_second"-->
 <!--                app:destination="@id/second_fragment"-->
@@ -19,7 +21,8 @@
 
     <fragment android:id="@+id/navigation_second"
               android:name="com.jetpack.navigation.view.number.SecondFragment"
-              android:label="@string/navigation_second">
+              android:label="@string/navigation_second"
+              tools:layout="@layout/fragment_second">
 
 <!--        <action android:id="@+id/second_to_third"-->
 <!--                app:destination="@id/third_fragment"-->
@@ -32,7 +35,8 @@
 
     <fragment android:id="@+id/navigation_third"
               android:name="com.jetpack.navigation.view.number.ThirdFragment"
-              android:label="@string/navigation_third">
+              android:label="@string/navigation_third"
+              tools:layout="@layout/fragment_third">
 
 <!--        <action android:id="@+id/third_to_first"-->
 <!--                app:popUpTo="@id/first_fragment"-->
