@@ -51,4 +51,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         binding.bottomNavigation.setupWithNavController(navController)
     }
 
+    override fun onSupportNavigateUp() = findNavController(R.id.nav_host_fragment).navigateUp()
+
 }
