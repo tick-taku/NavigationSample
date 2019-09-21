@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Navigation</string>
+
+    <string name="navigation_first">First Screen</string>
+    <string name="navigation_second">Second Screen</string>
+    <string name="navigation_third">Third Screen</string>
+    <string name="navigation_fourth">Fourth Screen</string>
+    <string name="navigation_fifth">Fifth Screen</string>
 </resources>
