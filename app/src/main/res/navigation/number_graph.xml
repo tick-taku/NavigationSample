@@ -5,42 +5,42 @@
             android:id="@+id/number_graph"
             app:startDestination="@id/navigation_first">
 
-    <fragment android:id="@+id/navigation_first"
+    <fragment android:id="@+id/first_fragment"
               android:name="com.jetpack.navigation.view.number.FirstFragment"
               android:label="@string/navigation_first"
               tools:layout="@layout/fragment_first">
 
-<!--        <action android:id="@+id/first_to_second"-->
-<!--                app:destination="@id/second_fragment"-->
-<!--                app:enterAnim="@anim/slide_from_right"-->
-<!--                app:exitAnim="@anim/slide_to_left"-->
-<!--                app:popEnterAnim="@anim/slide_from_left"-->
-<!--                app:popExitAnim="@anim/slide_to_right"/>-->
+        <action android:id="@+id/first_to_second"
+                app:destination="@id/second_fragment"
+                app:enterAnim="@anim/slide_from_right"
+                app:exitAnim="@anim/slide_to_left"
+                app:popEnterAnim="@anim/slide_from_left"
+                app:popExitAnim="@anim/slide_to_right"/>
 
     </fragment>
 
-    <fragment android:id="@+id/navigation_second"
+    <fragment android:id="@+id/second_fragment"
               android:name="com.jetpack.navigation.view.number.SecondFragment"
               android:label="@string/navigation_second"
               tools:layout="@layout/fragment_second">
 
-<!--        <action android:id="@+id/second_to_third"-->
-<!--                app:destination="@id/third_fragment"-->
-<!--                app:enterAnim="@anim/slide_from_right"-->
-<!--                app:exitAnim="@anim/slide_to_left"-->
-<!--                app:popEnterAnim="@anim/slide_from_left"-->
-<!--                app:popExitAnim="@anim/slide_to_right"/>-->
+        <action android:id="@+id/second_to_third"
+                app:destination="@id/third_fragment"
+                app:enterAnim="@anim/slide_from_right"
+                app:exitAnim="@anim/slide_to_left"
+                app:popEnterAnim="@anim/slide_from_left"
+                app:popExitAnim="@anim/slide_to_right"/>
 
     </fragment>
 
-    <fragment android:id="@+id/navigation_third"
+    <fragment android:id="@+id/third_fragment"
               android:name="com.jetpack.navigation.view.number.ThirdFragment"
               android:label="@string/navigation_third"
               tools:layout="@layout/fragment_third">
 
-<!--        <action android:id="@+id/third_to_first"-->
-<!--                app:popUpTo="@id/first_fragment"-->
-<!--                app:popUpToInclusive="true"/>-->
+        <action android:id="@+id/third_to_first"
+                app:popUpTo="@id/first_fragment"
+                app:popUpToInclusive="true"/>
 
     </fragment>
 

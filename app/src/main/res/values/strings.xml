@@ -9,4 +9,14 @@
 
     <string name="next_number">Next number</string>
     <string name="prev_number">Prev number</string>
+
+    <!-- Bikes -->
+    <string name="title_select_maker">Select Bike Maker Screen</string>
+
+    <string name="bike_maker_giant">GIANT</string>
+    <string name="bike_maker_merida">MERIDA</string>
+    <string name="bike_maker_colnago">COLNAGO</string>
+    <string name="bike_maker_pinarello">PINARELLO</string>
+    <string name="bike_maker_carrera">CARRERA</string>
+
 </resources>

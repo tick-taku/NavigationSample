@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/bike_graph"
+            app:startDestination="@id/select_maker_fragment"
+            tools:ignore="UnusedNavigation">
+
+    <fragment android:id="@+id/select_maker_fragment"
+              android:name="com.jetpack.navigation.view.bike.SelectBikeMakerFragment"
+              android:label="@string/title_select_maker"
+              tools:layout="@layout/fragment_select_bike_maker">
+
+        <action android:id="@+id/select_to_bike"
+                app:destination="@id/bike_fragment"
+                app:enterAnim="@anim/slide_from_right"
+                app:exitAnim="@anim/slide_to_left"
+                app:popEnterAnim="@anim/slide_from_left"
+                app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/bike_fragment"
+              android:name="com.jetpack.navigation.view.bike.BikeFragment"
+              android:label="{maker}"
+              tools:layout="@layout/fragment_bike">
+
+        <argument android:name="maker"
+                  app:argType="string"/>
+
+        <argument android:name="bikeDefinition"
+                  app:argType=".view.bike.BikeDefinition"
+                  android:defaultValue="MERIDA"/>
+
+    </fragment>
+
+</navigation>
