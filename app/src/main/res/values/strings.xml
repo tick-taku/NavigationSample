@@ -6,4 +6,7 @@
     <string name="navigation_third">Third Screen</string>
     <string name="navigation_fourth">Fourth Screen</string>
     <string name="navigation_fifth">Fifth Screen</string>
+
+    <string name="next_number">Next number</string>
+    <string name="prev_number">Prev number</string>
 </resources>
