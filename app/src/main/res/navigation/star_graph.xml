@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/star_graph"
+            app:startDestination="@id/star_fragment"
+            tools:ignore="UnusedNavigation">
+
+    <fragment android:id="@+id/star_fragment"
+              android:name="com.jetpack.navigation.view.star.StarFragment"
+              android:label="@string/title_select_star"
+              tools:layout="@layout/fragment_star">
+
+        <action android:id="@+id/select_to_image"
+                app:destination="@id/star_image_fragment"/>
+
+    </fragment>
+
+    <dialog android:id="@+id/star_image_fragment"
+            android:name="com.jetpack.navigation.view.star.StarImageFragment"
+            android:label="@string/title_select_star"
+            tools:layout="@layout/fragment_star_image">
+
+        <argument android:name="image"
+                  app:argType="reference"/>
+
+    </dialog>
+
+</navigation>

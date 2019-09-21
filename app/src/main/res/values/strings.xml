@@ -19,4 +19,11 @@
     <string name="bike_maker_pinarello">PINARELLO</string>
     <string name="bike_maker_carrera">CARRERA</string>
 
+    <!-- Star -->
+    <string name="title_select_star">Select Star Screen</string>
+
+    <string name="sirius">Sirius</string>
+    <string name="spica">Spica</string>
+    <string name="albireo">Albireo</string>
+
 </resources>
