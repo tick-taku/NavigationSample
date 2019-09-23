@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.jetpack.navigation.databinding.ActivityMainBinding
@@ -14,6 +15,10 @@ import com.jetpack.navigation.util.dataBinding
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private val binding: ActivityMainBinding by dataBinding()
+
+    private val topLevelScreen = setOf(R.id.first_fragment,
+                                       R.id.select_maker_fragment,
+                                       R.id.star_fragment)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +38,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private fun setupToolbar() {
         setSupportActionBar(binding.toolbar)
 
-        setupActionBarWithNavController(findNavController(R.id.nav_host_fragment))
+        setupActionBarWithNavController(findNavController(R.id.nav_host_fragment),
+                                        AppBarConfiguration(topLevelScreen))
 
         if (Build.VERSION_CODES.M <= Build.VERSION.SDK_INT) {
             binding.root.apply {

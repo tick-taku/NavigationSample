@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/navigation_first"
+    <item android:id="@+id/navigation_number"
           android:icon="@drawable/bottom_menu_selector"
           android:title="@string/navigation_first"/>
 
-    <item android:id="@+id/navigation_second"
+    <item android:id="@+id/navigation_bike"
           android:icon="@drawable/bottom_menu_selector"
-          android:title="@string/navigation_second"/>
+          android:title="@string/title_select_maker"/>
 
-    <item android:id="@+id/navigation_third"
+    <item android:id="@+id/navigation_star"
           android:icon="@drawable/bottom_menu_selector"
-          android:title="@string/navigation_third"/>
+          android:title="@string/title_select_star"/>
 
 </menu>
