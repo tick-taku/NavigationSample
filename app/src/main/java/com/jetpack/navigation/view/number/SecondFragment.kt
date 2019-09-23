@@ -15,7 +15,7 @@ class SecondFragment: Fragment(R.layout.fragment_second) {
         super.onActivityCreated(savedInstanceState)
 
         binding.next.setOnClickListener {
-//            findNavController().navigate(SecondFragmentDirections.secondToThird())
+            findNavController().navigate(SecondFragmentDirections.secondToThird())
         }
     }
 

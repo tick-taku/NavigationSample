@@ -15,7 +15,7 @@ class ThirdFragment: Fragment(R.layout.fragment_third) {
         super.onActivityCreated(savedInstanceState)
 
         binding.prev.setOnClickListener {
-//            findNavController().navigate(ThirdFragmentDirections.thirdToFirst())
+            findNavController().navigate(ThirdFragmentDirections.thirdToFirst())
         }
     }
 
